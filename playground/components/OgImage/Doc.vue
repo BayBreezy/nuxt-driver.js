@@ -14,6 +14,7 @@
 <template>
   <div class="flex h-full w-full items-start justify-start bg-white">
     <div class="flex items-center justify-center pt-24">
+      <!-- eslint-disable-next-line vue/html-self-closing -->
       <img
         src="https://nuxt-driverjs.behonbaker.com/driver-head.svg"
         alt="Driver.js Logo"
