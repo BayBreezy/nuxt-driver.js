@@ -102,8 +102,7 @@ export default defineNuxtConfig({
   security: {
     hidePoweredBy: true,
     headers: {
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+      crossOriginEmbedderPolicy: "unsafe-none",
       contentSecurityPolicy: false,
     },
   },
