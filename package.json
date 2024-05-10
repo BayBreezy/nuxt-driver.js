@@ -2,7 +2,11 @@
   "name": "nuxt-driver.js",
   "version": "0.0.2",
   "description": "A simple wrapper around the driver.js package(all credits to them) for creating guided tours and feature introductions for your Nuxt.js applications.",
-  "repository": "your-org/nuxt-driver.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BayBreezy/nuxt-driver.js.git"
+  },
+  "homepage": "https://nuxt-driverjs.behonbaker.com/",
   "license": "MIT",
   "type": "module",
   "author": {
