@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.2...v0.0.3)
+
+### 🏡 Chore
+
+- **pkg.json:** Configure package.json file properly ([aaef32a](https://github.com/BayBreezy/nuxt-driver.js/commit/aaef32a))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+
 ## v0.0.2
 
 
