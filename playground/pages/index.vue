@@ -75,6 +75,14 @@
 </template>
 
 <script lang="ts" setup>
+  const title = "Nuxt Driver.js";
+  const description =
+    "A simple wrapper around the driver.js package for creating guided tours and feature introductions for your Nuxt.js applications.";
+  defineOgImageComponent("Doc", {
+    title,
+    description,
+  });
+  useSeoMeta({ title, description, ogTitle: title, ogDescription: description });
   const highlighter = await getShikiHighlighter();
   const install = highlighter.highlight(`npm install nuxt-driver.js`, {
     lang: "bash",
