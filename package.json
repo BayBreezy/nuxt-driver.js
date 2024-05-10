@@ -35,6 +35,7 @@
     "dev:build": "nuxi build playground",
     "afterClone": "npm i && cd ./playground && npm i && cd .. && npm run dev:prepare",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "netlify": "npm run afterClone && npm run dev:prepare && npm run prepack && npm run dev:build",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
