@@ -7,6 +7,8 @@ Find and replace all on all files (CMD+SHIFT+F):
 - Description: A simple wrapper around the driver.js package(all credits to them) for creating guided tours and feature introductions for your Nuxt.js applications.
 -->
 
+![Driver.js Image](/playground//public//driver-head.svg)
+
 # Nuxt Driver.js
 
 [![npm version][npm-version-src]][npm-version-href]
@@ -17,7 +19,11 @@ Find and replace all on all files (CMD+SHIFT+F):
 A simple wrapper around the driver.js package(all credits to them) for creating guided tours and feature introductions for your Nuxt.js applications. for doing amazing things.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-  <!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [📖 &nbsp;Documentation](https://nuxt-driverjs.behonbaker.com)
+
+## Deployment status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/13144247-7452-442a-a2ef-25296b730111/deploy-status)](https://app.netlify.com/sites/nuxt-driverjs/deploys)
 
 ## Features
 
