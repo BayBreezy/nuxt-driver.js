@@ -1,6 +1,6 @@
 {
   "name": "nuxt-driver.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple wrapper around the driver.js package(all credits to them) for creating guided tours and feature introductions for your Nuxt.js applications.",
   "keywords": [
     "nuxt",
