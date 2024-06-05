@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^5.2.0",
-    "@vite-pwa/nuxt": "^0.7.0",
+    "@vite-pwa/nuxt": "^0.8.0",
     "nuxt": "^3.11.2",
     "nuxt-og-image": "^3.0.0-rc.53",
-    "nuxt-security": "^2.0.0-beta.5",
+    "nuxt-security": "^2.0.0-rc.6",
     "nuxt-shiki": "^0.3.0",
     "nuxt-simple-robots": "^4.0.0-rc.17",
-    "radix-vue": "^1.8.2",
+    "radix-vue": "^1.8.3",
     "tailwind-variants": "^0.2.1",
     "vue-sonner": "^1.1.2"
   },
@@ -28,8 +28,8 @@
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@vueuse/nuxt": "^10.10.0",
     "nuxt-icon": "^0.6.10",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.14",
+    "prettier": "^3.3.1",
+    "prettier-plugin-tailwindcss": "^0.6.1",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.4.5"
   }
