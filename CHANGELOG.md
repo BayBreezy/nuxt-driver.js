@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.6...v0.0.7)
+
+### 🩹 Fixes
+
+- **deps:** Downgrade typescript version ([4ae45de](https://github.com/BayBreezy/nuxt-driver.js/commit/4ae45de))
+
+### 🏡 Chore
+
+- **vueuse:** Import reactiveOmit function ([8f8c0f3](https://github.com/BayBreezy/nuxt-driver.js/commit/8f8c0f3))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.6
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.5...v0.0.6)
