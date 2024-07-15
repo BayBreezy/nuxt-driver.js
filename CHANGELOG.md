@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.7...v0.0.8)
+
+### 🩹 Fixes
+
+- Add shiki to list of transpiled dependencies ([6c42235](https://github.com/BayBreezy/nuxt-driver.js/commit/6c42235))
+
+### 🏡 Chore
+
+- Bump deps ([dfce7f1](https://github.com/BayBreezy/nuxt-driver.js/commit/dfce7f1))
+- Update deps ([707e8eb](https://github.com/BayBreezy/nuxt-driver.js/commit/707e8eb))
+
+### 🤖 CI
+
+- **dependabot:** Add config for updates from playground ([6f5dae4](https://github.com/BayBreezy/nuxt-driver.js/commit/6f5dae4))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.7
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.6...v0.0.7)
