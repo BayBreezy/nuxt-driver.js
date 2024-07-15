@@ -58,10 +58,10 @@
     "@nuxt/test-utils": "^3.13.1",
     "@types/node": "^20.14.10",
     "changelogen": "^0.5.5",
-    "eslint": "^9.6.0",
+    "eslint": "^9.7.0",
     "nuxt": "^3.12.3",
     "typescript": "^5.5.3",
-    "vitest": "^2.0.1",
+    "vitest": "^2.0.3",
     "vue-tsc": "^2.0.26"
   }
 }
