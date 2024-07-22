@@ -10,7 +10,7 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "^5.3.4",
+    "@nuxtjs/sitemap": "^5.3.5",
     "@vite-pwa/nuxt": "^0.9.1",
     "nuxt": "^3.12.3",
     "nuxt-og-image": "^3.0.0-rc.61",
