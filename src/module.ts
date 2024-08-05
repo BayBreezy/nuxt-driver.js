@@ -2,6 +2,7 @@ import { defineNuxtModule, addImports, createResolver } from "@nuxt/kit";
 import { name, version } from "../package.json";
 
 // Module options TypeScript interface definition
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
