@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.10...v0.0.11)
+
+### 🏡 Chore
+
+- Transpile shiki ([a1b3a05](https://github.com/BayBreezy/nuxt-driver.js/commit/a1b3a05))
+- Bump deps ([a9e7e84](https://github.com/BayBreezy/nuxt-driver.js/commit/a9e7e84))
+
+### 🎨 Styles
+
+- Lint codebase ([49c6c43](https://github.com/BayBreezy/nuxt-driver.js/commit/49c6c43))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.10
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.9...v0.0.10)
