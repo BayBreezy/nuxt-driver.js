@@ -17,7 +17,7 @@
     "nuxt-security": "^2.0.0-rc.9",
     "nuxt-shiki": "^0.3.0",
     "nuxt-simple-robots": "^4.0.1",
-    "radix-vue": "^1.9.2",
+    "radix-vue": "^1.9.3",
     "tailwind-variants": "^0.2.1",
     "vue-sonner": "^1.1.4"
   },
@@ -26,11 +26,11 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@nuxtjs/color-mode": "^3.4.2",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@vueuse/core": "^10.11.0",
-    "@vueuse/nuxt": "^10.11.0",
+    "@vueuse/core": "^10.11.1",
+    "@vueuse/nuxt": "^10.11.1",
     "nuxt-icon": "^0.6.10",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.5",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.4"
   }
