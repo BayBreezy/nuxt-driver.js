@@ -11,23 +11,23 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^5.3.5",
-    "@vite-pwa/nuxt": "^0.10.0",
-    "nuxt": "^3.12.4",
-    "nuxt-og-image": "^3.0.0-rc.64",
+    "@vite-pwa/nuxt": "^0.10.1",
+    "nuxt": "^3.13.0",
+    "nuxt-og-image": "^3.0.0-rc.65",
     "nuxt-security": "^2.0.0-rc.9",
     "nuxt-shiki": "^0.3.0",
     "nuxt-simple-robots": "^4.0.1",
-    "radix-vue": "^1.9.4",
+    "radix-vue": "^1.9.5",
     "tailwind-variants": "^0.2.1",
-    "vue-sonner": "^1.1.4"
+    "vue-sonner": "^1.1.5"
   },
   "devDependencies": {
     "@hypernym/nuxt-gsap": "^2.4.2",
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@vueuse/core": "^11.0.0",
-    "@vueuse/nuxt": "^11.0.0",
+    "@vueuse/core": "^11.0.3",
+    "@vueuse/nuxt": "^11.0.3",
     "nuxt-icon": "^0.6.10",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
@@ -35,6 +35,6 @@
     "typescript": "^5.5.4"
   },
   "overrides": {
-    "nitropack": "2.9.6"
+    "nitropack": "2.9.5"
   }
 }
