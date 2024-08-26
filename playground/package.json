@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^5.3.5",
-    "@vite-pwa/nuxt": "^0.10.0",
+    "@vite-pwa/nuxt": "^0.10.1",
     "nuxt": "^3.12.4",
     "nuxt-og-image": "^3.0.0-rc.64",
     "nuxt-security": "^2.0.0-rc.9",
