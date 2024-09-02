@@ -11,8 +11,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
-    "nuxt-icon",
-    "nuxt-simple-robots",
+    "@nuxt/icon",
+    "@nuxtjs/robots",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
     "@vite-pwa/nuxt",
@@ -20,7 +20,6 @@ export default defineNuxtConfig({
     "@hypernym/nuxt-gsap",
     "nuxt-shiki",
   ],
-
   shiki: {
     bundledLangs: ["js", "ts", "html", "css", "json", "vue", "vue-html", "bash", "yaml"],
     defaultTheme: {
