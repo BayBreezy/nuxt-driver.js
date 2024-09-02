@@ -22,7 +22,7 @@
     "vue-sonner": "^1.1.5"
   },
   "devDependencies": {
-    "@hypernym/nuxt-gsap": "^2.4.2",
+    "@hypernym/nuxt-gsap": "^2.4.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/tailwindcss": "^6.12.1",
