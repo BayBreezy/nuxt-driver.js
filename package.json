@@ -34,7 +34,7 @@
     "dist"
   ],
   "scripts": {
-    "afterClone": "rm -rf package-lock.json playground/package-lock.json && npm i && cd ./playground && npm i && cd .. && npm run dev:prepare",
+    "afterClone": "npm i && cd ./playground && npm i && cd .. && npm run dev:prepare",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
