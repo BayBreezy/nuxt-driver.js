@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v0.0.14
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.13...v0.0.14)
+
+### 🏡 Chore
+
+- Update deploy command ([3054659](https://github.com/BayBreezy/nuxt-driver.js/commit/3054659))
+- Add @rollup/rollup-linux-x64-gnu ([2e88fe9](https://github.com/BayBreezy/nuxt-driver.js/commit/2e88fe9))
+- Bump deps ([291735c](https://github.com/BayBreezy/nuxt-driver.js/commit/291735c))
+- Add license ([520ba62](https://github.com/BayBreezy/nuxt-driver.js/commit/520ba62))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.13
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.12...v0.0.13)
