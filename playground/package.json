@@ -10,7 +10,7 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
-    "@nuxtjs/robots": "4.1.6",
+    "@nuxtjs/robots": "4.1.7",
     "@nuxtjs/sitemap": "^6.0.1",
     "@vite-pwa/nuxt": "^0.10.5",
     "nuxt": "^3.13.1",
