@@ -13,7 +13,7 @@
     "@nuxtjs/robots": "4.1.6",
     "@nuxtjs/sitemap": "^6.0.1",
     "@vite-pwa/nuxt": "^0.10.5",
-    "nuxt": "^3.13.1",
+    "nuxt": "^3.13.2",
     "nuxt-og-image": "^3.0.0-rc.66",
     "nuxt-security": "^2.0.0-rc.9",
     "nuxt-shiki": "^0.3.0",
