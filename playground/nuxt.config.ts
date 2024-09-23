@@ -1,3 +1,5 @@
+import wasm from "vite-plugin-wasm";
+
 import NuxtDriver from "../src/module";
 
 const siteName = "Nuxt Driver.js";
@@ -29,6 +31,7 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    plugins: [wasm()],
     optimizeDeps: { include: ["tailwind-variants", "radix-vue", "gsap", "gsap/ScrollTrigger"] },
   },
 
