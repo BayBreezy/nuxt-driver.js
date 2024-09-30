@@ -14,7 +14,7 @@
     "@nuxtjs/sitemap": "^6.1.0",
     "@vite-pwa/nuxt": "^0.10.5",
     "nuxt": "^3.13.2",
-    "nuxt-og-image": "^3.0.2",
+    "nuxt-og-image": "^3.0.4",
     "nuxt-security": "^2.0.0",
     "nuxt-shiki": "^0.3.0",
     "radix-vue": "^1.9.6",
