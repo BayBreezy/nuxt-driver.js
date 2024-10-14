@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.0.17
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.16...v0.0.17)
+
+### 🏡 Chore
+
+- **release:** V0.0.16 ([fafe729](https://github.com/BayBreezy/nuxt-driver.js/commit/fafe729))
+- Bump deps ([6fa28ca](https://github.com/BayBreezy/nuxt-driver.js/commit/6fa28ca))
+- Bump deps ([41d91d2](https://github.com/BayBreezy/nuxt-driver.js/commit/41d91d2))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.16
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.15...v0.0.16)
