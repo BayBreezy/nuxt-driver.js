@@ -122,7 +122,7 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile: ["vue-sonner", "shiki"],
+    transpile: ["vue-sonner"],
   },
 
   compatibilityDate: "2024-07-09",
