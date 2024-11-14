@@ -10,6 +10,7 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
+    "@iconify/vue": "^4.1.2",
     "@nuxtjs/robots": "4.1.11",
     "@nuxtjs/sitemap": "^6.1.5",
     "@vite-pwa/nuxt": "^0.10.6",
@@ -29,13 +30,13 @@
     "@nuxt/icon": "^1.7.5",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@rollup/plugin-wasm": "^6.2.2",
     "@vueuse/core": "^11.2.0",
     "@vueuse/nuxt": "^11.2.0",
     "nitropack": "2.10.4",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.6.3",
-    "vite-plugin-wasm": "^3.3.0"
+    "typescript": "^5.6.3"
   }
 }

@@ -1,4 +1,4 @@
-import wasm from "vite-plugin-wasm";
+import wasm from "@rollup/plugin-wasm";
 
 import NuxtDriver from "../src/module";
 
