@@ -52,24 +52,8 @@
       </div>
     </UiContainer>
     <UiContainer id="get-started" class="relative scroll-mt-20 py-16 lg:py-24">
-      <h2 class="text-2xl font-semibold tracking-tight lg:text-4xl">Getting started</h2>
-      <p class="mt-2 text-lg text-muted-foreground">
-        To get started, install the package with your package manager of choice.
-      </p>
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <div v-if="install" v-html="install" />
-      <p class="text-lg text-muted-foreground">
-        Now add the module to the modules section of your nuxt.config file.
-      </p>
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <div v-if="addToConfig" v-html="addToConfig" />
-      <p class="text-lg text-muted-foreground">
-        That is it! You are now ready to start creating guided tours and feature introductions for
-        your Nuxt.js applications. The example used on this page is a simple example of how you can
-        use Nuxt Driver.js to guide users through your application.
-      </p>
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <div v-if="pageExample" v-html="pageExample" />
+      <h2 class="mb-2 text-2xl font-semibold tracking-tight lg:text-4xl">Getting started</h2>
+      <ContentRenderer :value="data" />
     </UiContainer>
   </div>
 </template>
@@ -83,76 +67,7 @@
     description,
   });
   useSeoMeta({ title, description, ogTitle: title, ogDescription: description });
-  const highlighter = await getShikiHighlighter();
-  const install = highlighter.highlight(`npm install nuxt-driver.js`, {
-    lang: "bash",
-  });
-
-  const addToConfig = highlighter.highlight(
-    `export default defineNuxtConfig({
-  modules: ["nuxt-driver.js"];
-});`,
-    { lang: "ts" }
-  );
-
-  const pageExample = highlighter.highlight(
-    ` onMounted(() => {
-    const driver = useDriver({
-      showProgress: true,
-      animate: true,
-      steps: [
-        {
-          element: "#welcome",
-          popover: {
-            title: "Welcome to Nuxt Driver.js",
-            description:
-              "Quickly guide your users through your Nuxt.js application with Driver.js.",
-            side: "bottom",
-          },
-        },
-        {
-          element: "#header",
-          popover: {
-            title: "Nuxt Driver.js",
-            description:
-              "A simple wrapper around the driver.js package for creating guided tours and feature introductions for your Nuxt.js applications.",
-            side: "bottom",
-          },
-        },
-        {
-          element: "#description",
-          popover: {
-            title: "Nuxt Driver.js",
-            description:
-              "A simple wrapper around the driver.js package for creating guided tours and feature introductions for your Nuxt.js applications.",
-            side: "bottom",
-          },
-        },
-        {
-          element: "#view-docs",
-          popover: {
-            title: "View Docs",
-            description:
-              "Learn more about Driver.js and how to use it in your Nuxt.js applications.",
-            side: "top",
-          },
-        },
-      ],
-    });
-    const tl = useGsap.timeline();
-
-    tl.from("#welcome", { opacity: 0, y: 30, duration: 0.4 })
-      .from("#header", { opacity: 0, y: 30, duration: 0.4 }, "-=0.1")
-      .from("#description", { opacity: 0, y: 30, duration: 0.4 }, "-=0.1")
-      .from("#view-docs", { opacity: 0, y: 30, duration: 0.4 }, "-=0.1")
-      .from("#get-started-btn", { opacity: 0, y: 30, duration: 0.4 }, "-=0.1")
-      .call(() => {
-        driver.drive();
-      });
-  });`,
-    { lang: "ts" }
-  );
-
+  const { data } = await useAsyncData("page-data", () => queryContent("/install").findOne());
   onMounted(() => {
     const driver = useDriver({
       showProgress: true,
@@ -227,6 +142,6 @@
 
 <style>
   pre {
-    @apply my-5 max-h-[450px] overflow-auto rounded-md p-4 leading-relaxed;
+    @apply my-5 max-h-[450px] overflow-auto rounded-md bg-[#23262E] p-4 leading-relaxed;
   }
 </style>

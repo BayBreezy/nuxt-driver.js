@@ -1,5 +1,3 @@
-import wasm from "@rollup/plugin-wasm";
-
 import NuxtDriver from "../src/module";
 
 const siteName = "Nuxt Driver.js";
@@ -20,18 +18,12 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
     "nuxt-security",
     "@hypernym/nuxt-gsap",
-    "nuxt-shiki",
+    "@nuxt/content",
   ],
-  shiki: {
-    bundledLangs: ["js", "ts", "html", "css", "json", "vue", "vue-html", "bash", "yaml"],
-    defaultTheme: {
-      light: "andromeeda",
-      dark: "andromeeda",
-    },
+  content: {
+    highlight: { theme: { default: "andromeeda" } },
   },
-
   vite: {
-    plugins: [wasm()],
     optimizeDeps: { include: ["tailwind-variants", "radix-vue", "gsap", "gsap/ScrollTrigger"] },
   },
 
