@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.19
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.18...v0.0.19)
+
+### 🏡 Chore
+
+- Update playground deps ([ff58c6e](https://github.com/BayBreezy/nuxt-driver.js/commit/ff58c6e))
+- Move from nuxt shiki to content module ([ddd44a7](https://github.com/BayBreezy/nuxt-driver.js/commit/ddd44a7))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.18
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.17...v0.0.18)
