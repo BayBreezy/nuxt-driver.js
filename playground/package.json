@@ -15,7 +15,7 @@
     "@nuxtjs/robots": "4.1.11",
     "@nuxtjs/sitemap": "^6.1.5",
     "@vite-pwa/nuxt": "^0.10.6",
-    "nuxt": "^3.14.159",
+    "nuxt": "^3.14.1592",
     "nuxt-og-image": "^3.0.8",
     "nuxt-security": "^2.1.1",
     "radix-vue": "^1.9.9",
