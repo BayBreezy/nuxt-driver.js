@@ -31,7 +31,7 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vueuse/core": "^12.2.0",
-    "@vueuse/nuxt": "^12.2.0",
+    "@vueuse/nuxt": "^12.4.0",
     "nitropack": "2.10.4",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
