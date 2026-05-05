@@ -59,6 +59,7 @@
     "driver.js": "^1.4.0"
   },
   "devDependencies": {
+    "@antfu/ni": "^30.1.0",
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
     "@nuxt/devtools": "^3.2.4",
