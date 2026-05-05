@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/crates/oxc_linter/src/rules.rs",
+  "rules": {},
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  }
+}

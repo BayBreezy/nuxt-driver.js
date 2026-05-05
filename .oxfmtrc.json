@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": ["**/*.{md,mdx}"],
+  "jsdoc": {
+    "bracketSpacing": true,
+    "descriptionWithDot": true,
+    "separateReturnsFromParam": true
+  },
+  "sortImports": {
+    "partitionByComment": true
+  },
+  "sortPackageJson": { "sortScripts": true },
+  "sortTailwindcss": {
+    "attributes": [":class"],
+    "functions": ["tw", "tv"],
+    "stylesheet": "./docs/node_modules/@baybreezy/docd/app/assets/css/tailwind.css"
+  },
+  "vueIndentScriptAndStyle": true
+}
