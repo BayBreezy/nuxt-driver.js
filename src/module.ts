@@ -50,7 +50,7 @@ export default defineNuxtModule<ModuleOptions>({
         // iframe view
         view: {
           type: "iframe",
-          src: "https://driverjs.com/",
+          src: "https://driverjs.com/docs/installation",
         },
       });
     });
