@@ -1,13 +1,4 @@
-<!--
-Get your module up and running quickly.
-
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: Nuxt Driver.js
-- Package name: nuxt-driver.js
-- Description: A simple wrapper around the driver.js package(all credits to them) for creating guided tours and feature introductions for your Nuxt.js applications.
--->
-
-![Driver.js Image](/playground//public//driver-head.svg)
+![Driver.js Image](/docs//public//driver-head.svg)
 
 # Nuxt Driver.js
 
@@ -15,62 +6,168 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
+[![CI](https://github.com/BayBreezy/nuxt-driver.js/actions/workflows/ci.yml/badge.svg)](https://github.com/BayBreezy/nuxt-driver.js/actions/workflows/ci.yml)
 
-A simple wrapper around the driver.js package(all credits to them) for creating guided tours and feature introductions for your Nuxt.js applications. for doing amazing things.
+A Nuxt module that wraps [driver.js](https://driverjs.com) and adds persistent tour tracking via localStorage. Guide your users through your Nuxt application with multi-step tours that remember where they left off.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 - [📖 &nbsp;Documentation](https://nuxt-driverjs.behonbaker.com)
+- [🤝 &nbsp;Contributing](./CONTRIBUTING.md)
 
-## Deployment status
+## Deployment Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/13144247-7452-442a-a2ef-25296b730111/deploy-status)](https://app.netlify.com/sites/nuxt-driverjs/deploys)
 
 ## Features
 
-- **Easy to use**: Just add the module to your Nuxt app and you're ready to go.
-- **Customizable**: Customize the driver.js options to fit your needs.
-- **Responsive**: Works on all devices and screen sizes.
+- **Tour persistence** — completed tours are stored in localStorage so they are not replayed on every page load.
+- **Restart support** — programmatically clear a tour's played state and replay it at any time.
+- **Auto-skip** — optionally skip a tour silently if the user has already completed it.
+- **Easy to use** — one auto-imported composable, zero boilerplate.
+- **Customizable** — every driver.js option is available.
+- **Responsive** — works on all devices and screen sizes.
 
 ## Quick Setup
 
-Install the module to your Nuxt application with one command:
-
 ```bash
-npm i nuxt-driver.js
+bun add nuxt-driver.js
 ```
 
-That's it! You can now use Nuxt Driver.js in your Nuxt app ✨
+Add the module to your `nuxt.config`:
+
+```ts
+export default defineNuxtConfig({
+  modules: ["nuxt-driver.js"],
+});
+```
+
+## `useDriver` Composable
+
+```ts
+const { start, restart, isPlayed, markPlayed, clear, driver } = useDriver(name, options?)
+```
+
+### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `name` | `string` | Unique identifier for the tour. Used as part of the localStorage key. |
+| `options` | `UseDriverOptions` | Optional configuration (see below). |
+
+### `UseDriverOptions`
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `storageKey` | `string` | `"${storagePrefix}:${name}"` | Fully override the localStorage key. |
+| `autoSkip` | `boolean` | `false` | Skip `start()` silently when the tour has already been played. |
+
+### Return Value
+
+| Member | Type | Description |
+|--------|------|-------------|
+| `start(config)` | `(config: Config) => void` | Start the tour. Marks as played on completion. |
+| `restart(config)` | `(config: Config) => void` | Clear the played flag and start unconditionally. |
+| `isPlayed()` | `() => boolean` | Returns `true` if the tour has been completed. |
+| `markPlayed()` | `() => void` | Manually write the played flag to localStorage. |
+| `clear()` | `() => void` | Remove the played flag from localStorage. |
+| `driver` | `(options?: Config) => Driver` | Raw driver.js factory for advanced use. |
+
+### Example
+
+```vue
+<script setup lang="ts">
+onMounted(() => {
+  const { start } = useDriver("onboarding", { autoSkip: true });
+
+  start({
+    showProgress: true,
+    animate: true,
+    steps: [
+      {
+        element: "#welcome",
+        popover: {
+          title: "Welcome",
+          description: "Let us show you around.",
+          side: "bottom",
+        },
+      },
+      {
+        element: "#dashboard",
+        popover: {
+          title: "Your Dashboard",
+          description: "Everything you need in one place.",
+          side: "right",
+        },
+      },
+    ],
+  });
+});
+</script>
+```
+
+### Restart a Tour
+
+```vue
+<script setup lang="ts">
+const { restart } = useDriver("onboarding");
+
+function replayTour() {
+  restart({
+    steps: [
+      { element: "#welcome", popover: { title: "Welcome back!" } },
+    ],
+  });
+}
+</script>
+
+<template>
+  <button @click="replayTour">Replay tour</button>
+</template>
+```
+
+## Module Options
+
+Configure the module in `nuxt.config` under the `driverJs` key:
+
+```ts
+export default defineNuxtConfig({
+  modules: ["nuxt-driver.js"],
+  driverJs: {
+    storagePrefix: "my-app", // default: "nuxt-driver"
+  },
+});
+```
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `storagePrefix` | `string` | `"nuxt-driver"` | Prefix for all localStorage tour keys. |
 
 ## Contribution
 
-<details>
-  <summary>Local development</summary>
-  
-  ```bash
-  # Install dependencies
-  npm install
-  
-  # Generate type stubs
-  npm run dev:prepare
-  
-  # Develop with the playground
-  npm run dev
-  
-  # Build the playground
-  npm run dev:build
-  
-  # Run ESLint
-  npm run lint
-  
-  # Run Vitest
-  npm run test
-  npm run test:watch
-  
-  # Release new version
-  npm run release
-  ```
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full development guide.
 
-</details>
+```bash
+# Install dependencies
+bun install
+
+# Generate type stubs and prepare the playground
+bun run dev:prepare
+
+# Start the playground dev server
+bun run dev
+
+# Run linting (ESLint + oxlint)
+bun run lint
+
+# Format with oxfmt
+bun run fmt
+
+# Run tests
+bun run test
+
+# Release (maintainers only)
+bun run release
+```
 
 <!-- Badges -->
 
