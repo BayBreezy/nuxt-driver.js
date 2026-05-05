@@ -1,3 +1,20 @@
 {
-  "eslint.experimental.useFlatConfig": true
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "mdc.enableComponentMetadataCompletions": true,
+  // Required for the extension
+  "mdc.enableFormatting": true,
+  "[mdc]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.formatOnPaste": true
+  },
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.formatOnPaste": true
+  }
 }
