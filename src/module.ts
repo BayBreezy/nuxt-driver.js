@@ -1,9 +1,11 @@
 import { defineNuxtModule, addImports, createResolver } from "@nuxt/kit";
+
 import { name, version } from "../package.json";
 
-// Module options TypeScript interface definition
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  /** Prefix used for all localStorage tour keys. Defaults to "nuxt-driver". */
+  storagePrefix?: string;
+}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -11,9 +13,13 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: "driverJs",
   },
-  // Default configuration options of the Nuxt module
-  defaults: {},
+  defaults: {
+    storagePrefix: "nuxt-driver",
+  },
   setup(_options, _nuxt) {
+    _nuxt.options.runtimeConfig.public.driverJs = {
+      storagePrefix: _options.storagePrefix ?? "nuxt-driver",
+    };
     const resolver = createResolver(import.meta.url);
     const runtimeDir = resolver.resolve("./runtime");
     // transpile runtime files
