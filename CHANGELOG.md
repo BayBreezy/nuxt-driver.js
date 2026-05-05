@@ -1,6 +1,48 @@
 # Changelog
 
 
+## v0.1.0
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.24...v0.1.0)
+
+### 🚀 Enhancements
+
+- Add issue templates for bug reports and feature requests ([da9d2cb](https://github.com/BayBreezy/nuxt-driver.js/commit/da9d2cb))
+- Add CI workflow for automated testing and linting ([7b16f96](https://github.com/BayBreezy/nuxt-driver.js/commit/7b16f96))
+- Add husky hooks for commit message linting and pre-commit linting ([fbd5ef1](https://github.com/BayBreezy/nuxt-driver.js/commit/fbd5ef1))
+- Add clean script for removing generated files and dependencies ([30f19e8](https://github.com/BayBreezy/nuxt-driver.js/commit/30f19e8))
+- Implement useDriver function with localStorage management and tour control ([873fdf6](https://github.com/BayBreezy/nuxt-driver.js/commit/873fdf6))
+- Define ModuleOptions interface with storagePrefix for localStorage management ([baa5903](https://github.com/BayBreezy/nuxt-driver.js/commit/baa5903))
+- Add configuration files for oxfmt and oxc linter ([e3253a9](https://github.com/BayBreezy/nuxt-driver.js/commit/e3253a9))
+- Add commitlint configuration for enforcing header length ([af8f9cf](https://github.com/BayBreezy/nuxt-driver.js/commit/af8f9cf))
+
+### 💅 Refactors
+
+- Remove old playground ([9290fbe](https://github.com/BayBreezy/nuxt-driver.js/commit/9290fbe))
+
+### 📖 Documentation
+
+- Add contributing guidelines and setup instructions ([6b4182a](https://github.com/BayBreezy/nuxt-driver.js/commit/6b4182a))
+- Update README.md for clarity and improved setup instructions ([13ccaba](https://github.com/BayBreezy/nuxt-driver.js/commit/13ccaba))
+- Update iframe source for Driver.js documentation ([bc96c90](https://github.com/BayBreezy/nuxt-driver.js/commit/bc96c90))
+- Add initial documentation for nuxt-driver.js module ([60d9582](https://github.com/BayBreezy/nuxt-driver.js/commit/60d9582))
+
+### 🏡 Chore
+
+- Clean up dependabot configuration by removing unnecessary comments ([87dcc3f](https://github.com/BayBreezy/nuxt-driver.js/commit/87dcc3f))
+- Update VSCode settings for improved formatting and metadata completions ([b3cba97](https://github.com/BayBreezy/nuxt-driver.js/commit/b3cba97))
+- Update tsconfig.json to include 'docs' and 'test/fixtures' in the exclude list ([32f36a9](https://github.com/BayBreezy/nuxt-driver.js/commit/32f36a9))
+- Update package.json dependencies and scripts ([645687f](https://github.com/BayBreezy/nuxt-driver.js/commit/645687f))
+
+### ✅ Tests
+
+- Add unit tests for useDriver functionality and localStorage interactions ([99b76c2](https://github.com/BayBreezy/nuxt-driver.js/commit/99b76c2))
+- Add Vitest configuration for unit testing ([5d333b2](https://github.com/BayBreezy/nuxt-driver.js/commit/5d333b2))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](https://github.com/BayBreezy))
+
 ## v0.0.24
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.23...v0.0.24)
