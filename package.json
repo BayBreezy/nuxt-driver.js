@@ -48,7 +48,7 @@
     "lint": "oxlint src/",
     "netlify": "nr prepack && cd docs && bun i --frozen-lockfile && bun run build",
     "prepack": "nuxt-module-build build",
-    "prepare": "husky && nr dev:prepare",
+    "prepare": "husky",
     "release": "nr lint && nr fmt:check && nr test && nr prepack && changelogen --release && npm publish && git push --follow-tags",
     "test": "vitest run",
     "test:types": "vue-tsc --noEmit",
