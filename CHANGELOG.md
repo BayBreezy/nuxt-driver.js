@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.1.1
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.1.0...v0.1.1)
+
+### 🩹 Fixes
+
+- Remove unused stylesheet path from Tailwind CSS configuration [skip netlify] ([6cc99be](https://github.com/BayBreezy/nuxt-driver.js/commit/6cc99be))
+- Remove dev:prepare command from the prepare step. ([e8adba9](https://github.com/BayBreezy/nuxt-driver.js/commit/e8adba9))
+
+### 🏡 Chore
+
+- **release:** V0.1.0 ([dd579e8](https://github.com/BayBreezy/nuxt-driver.js/commit/dd579e8))
+- Update lock file ([588d516](https://github.com/BayBreezy/nuxt-driver.js/commit/588d516))
+
+### 🤖 CI
+
+- Update devDependencies to include @antfu/ni and upgrade oxlint ([592babb](https://github.com/BayBreezy/nuxt-driver.js/commit/592babb))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](https://github.com/BayBreezy))
+
 ## v0.1.0
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.0.24...v0.1.0)
