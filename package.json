@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@antfu/ni": "^30.1.0",
-    "@commitlint/cli": "^20.5.3",
+    "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^20.5.3",
     "@nuxt/devtools": "^3.2.4",
     "@nuxt/eslint-config": "^1.15.2",
