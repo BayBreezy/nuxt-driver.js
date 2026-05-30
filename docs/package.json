@@ -17,8 +17,8 @@
   "dependencies": {
     "@baybreezy/docd": "latest",
     "@vite-pwa/nuxt": "^1.1.1",
-    "nuxt": "^4.4.4",
-    "nuxt-security": "^2.5.1",
+    "nuxt": "^4.4.6",
+    "nuxt-security": "^2.6.0",
     "vue": "latest",
     "vue-router": "latest"
   },
