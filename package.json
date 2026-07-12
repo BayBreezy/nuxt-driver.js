@@ -69,7 +69,7 @@
     "@nuxt/schema": "^4.4.6",
     "@nuxt/test-utils": "^4.0.3",
     "@rollup/rollup-linux-x64-gnu": "^4.60.4",
-    "@types/node": "^25.9.1",
+    "@types/node": "^26.1.1",
     "changelogen": "^0.6.2",
     "eslint": "^10.4.1",
     "husky": "^9.1.7",
