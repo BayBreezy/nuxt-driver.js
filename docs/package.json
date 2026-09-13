@@ -22,6 +22,9 @@
     "vue": "latest",
     "vue-router": "latest"
   },
+  "devDependencies": {
+    "node-gyp": "^11.4.2"
+  },
   "packageManager": "bun@1.4.0",
   "trustedDependencies": [
     "@morev/vue-transitions",
