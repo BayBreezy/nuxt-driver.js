@@ -12,8 +12,8 @@ export default defineAppConfig({
         title: "Nuxt Driver.js",
         logo: {
           alt: "Nuxt Driver.js Logo",
-          dark: "/driver-head.svg",
-          light: "/driver-head.svg",
+          dark: "/icon.png",
+          light: "/icon.png",
         },
       },
       extraLinks: [

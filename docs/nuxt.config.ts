@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
 
   pwa: {
-    includeAssets: ["driver-head.svg"],
+    includeAssets: ["icon.png"],
     workbox: { cleanupOutdatedCaches: true },
     client: { installPrompt: "nuxt-driver-install-prompt" },
     manifest: {
@@ -31,25 +31,25 @@ export default defineNuxtConfig({
       background_color: "#FFFFFF",
       icons: [
         {
-          src: "/icons/pwa-192x192.png",
+          src: "/icons/icon.png",
           sizes: "192x192",
           type: "image/png",
           purpose: "any",
         },
         {
-          src: "/icons/pwa-512x512.png",
+          src: "/icons/icon.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "any",
         },
         {
-          src: "/icons/pwa-maskable-192x192.png",
+          src: "/icons/web-app-manifest-192x192.png",
           sizes: "192x192",
           type: "image/png",
           purpose: "maskable",
         },
         {
-          src: "/icons/pwa-maskable-512x512.png",
+          src: "/icons/web-app-manifest-512x512.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "maskable",
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
     head: {
       title: siteName,
       titleTemplate: `%s | ${siteName}`,
-      link: [{ rel: "icon", type: "image/svg+xml", href: "/driver-head.svg" }],
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/icon.png" }],
     },
   },
 

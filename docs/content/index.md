@@ -6,8 +6,8 @@ description: "Guided tours for Nuxt. Add step-by-step onboarding and feature wal
 ::landing-hero
 ---
 siteName: "Nuxt Driver.js"
-logoLight: "/driver-head.svg"
-logoDark: "/driver-head.svg"
+logoLight: "/icon.png"
+logoDark: "/icon.png"
 headline: "Guided tours for Nuxt"
 description: "Guided tours for Nuxt. Add step-by-step onboarding and feature walkthroughs to your app. One component, one composable, zero configuration."
 badge:
