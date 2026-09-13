@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.1.2
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.1.1...v0.1.2)
+
+### 🩹 Fixes
+
+- Update netlify script to use nuxt-module-build commands ([8f647ba](https://github.com/BayBreezy/nuxt-driver.js/commit/8f647ba))
+- Update netlify script to correct directory navigation ([9ff9f0f](https://github.com/BayBreezy/nuxt-driver.js/commit/9ff9f0f))
+
+### 🏡 Chore
+
+- **release:** V0.1.1 ([20e7f79](https://github.com/BayBreezy/nuxt-driver.js/commit/20e7f79))
+- Bump deps ([433f0ce](https://github.com/BayBreezy/nuxt-driver.js/commit/433f0ce))
+- Update lock files ([d1eb398](https://github.com/BayBreezy/nuxt-driver.js/commit/d1eb398))
+- Bump deps ([e45088f](https://github.com/BayBreezy/nuxt-driver.js/commit/e45088f))
+- Replace PWA icons with new web app manifest icons and remove outdated files ([d440350](https://github.com/BayBreezy/nuxt-driver.js/commit/d440350))
+- Update image references in README and module to use correct icons ([ddbbf9b](https://github.com/BayBreezy/nuxt-driver.js/commit/ddbbf9b))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](https://github.com/BayBreezy))
+
 ## v0.1.1
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.1.0...v0.1.1)
