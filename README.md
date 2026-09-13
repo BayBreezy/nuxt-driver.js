@@ -1,4 +1,4 @@
-![Driver.js Image](/docs//public//driver-head.svg)
+![Driver.js Image](/docs//public//icon.png)
 
 # Nuxt Driver.js
 

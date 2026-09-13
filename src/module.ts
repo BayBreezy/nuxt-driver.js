@@ -46,7 +46,7 @@ export default defineNuxtModule<ModuleOptions>({
         // title to display in the tab
         title: "Driver.js Docs",
         // any icon from Iconify, or a URL to an image
-        icon: "https://driverjs.com/driver-head.svg",
+        icon: "https://driverjs.com/mascot-head.png",
         // iframe view
         view: {
           type: "iframe",
