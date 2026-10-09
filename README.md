@@ -1,6 +1,8 @@
-![Driver.js Image](/docs//public//icon.png)
+<p align="center">
+  <img src="./docs/public/icon.png" alt="Nuxt Driver.js" width="150" />
+</p>
 
-# Nuxt Driver.js
+<h1 align="center">Nuxt Driver.js</h1>
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]

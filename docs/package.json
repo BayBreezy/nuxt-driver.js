@@ -17,15 +17,15 @@
   "dependencies": {
     "@baybreezy/docd": "latest",
     "@vite-pwa/nuxt": "^1.1.1",
-    "nuxt": "^4.5.2",
+    "nuxt": "^4.6.0",
     "nuxt-security": "^2.6.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "node-gyp": "^11.4.2"
+    "node-gyp": "^11.5.0"
   },
-  "packageManager": "bun@1.4.0",
+  "packageManager": "bun@1.4.2",
   "trustedDependencies": [
     "@morev/vue-transitions",
     "@parcel/watcher",
