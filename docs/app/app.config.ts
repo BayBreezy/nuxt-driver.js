@@ -7,6 +7,7 @@ export default defineAppConfig({
       contentDir: "docs/content",
     },
     ui: {
+      body: { maxWidth: "780px" },
       expandNav: true,
       header: {
         title: "Nuxt Driver.js",
