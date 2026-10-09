@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["**/*.{md,mdx}"],
+  "ignorePatterns": ["**/*.{md,mdx}", "netlify.toml"],
   "jsdoc": {
     "bracketSpacing": true,
     "descriptionWithDot": true,
