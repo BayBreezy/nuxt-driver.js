@@ -20,6 +20,13 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      - name: Install docs dependencies
+        run: bun install --frozen-lockfile
+        working-directory: docs
+
+      - name: Prepare (generate docs/.nuxt/tsconfig.json)
+        run: bun run dev:prepare
+
       - name: Lint
         run: bun run lint
 
