@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.1.3
+
+[compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.1.2...v0.1.3)
+
+### 🏡 Chore
+
+- **release:** V0.1.2 ([1722365](https://github.com/BayBreezy/nuxt-driver.js/commit/1722365))
+- Add netlify configuration for build environment ([bffaa01](https://github.com/BayBreezy/nuxt-driver.js/commit/bffaa01))
+- Add node-gyp as a devDependency in package.json ([a862b3c](https://github.com/BayBreezy/nuxt-driver.js/commit/a862b3c))
+- Add maxWidth to body in app configuration ([b441016](https://github.com/BayBreezy/nuxt-driver.js/commit/b441016))
+- Update dependencies and devDependencies to latest versions ([4ebf776](https://github.com/BayBreezy/nuxt-driver.js/commit/4ebf776))
+- Add netlify.toml to ignorePatterns in oxfmtrc configuration ([a9d9566](https://github.com/BayBreezy/nuxt-driver.js/commit/a9d9566))
+
+### ❤️ Contributors
+
+- Behon Baker
+
 ## v0.1.2
 
 [compare changes](https://github.com/BayBreezy/nuxt-driver.js/compare/v0.1.1...v0.1.2)
